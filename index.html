@@ -3,7 +3,7 @@
  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ระบบสอบ CRB ออนไลน์</title>
+  <title>Shipping Business</title>
   <link rel="icon" href="data:,">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -101,7 +101,7 @@
     <div class="text-center mb-8">
      <div class="w-20 h-20 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-4"><span class="text-4xl">📚</span>
      </div>
-     <h1 class="text-3xl font-bold text-gray-900 mb-2">ระบบสอบ CRB ออนไลน์</h1>
+     <h1 class="text-3xl font-bold text-gray-900 mb-2">Exam ShippingBusinessSystem</h1>
      <p class="text-gray-600">ระบบจัดการการสอบและบันทึกผลการสอบ</p>
     </div>
     <div class="space-y-3"><button onclick="showPage('login')" class="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white py-4 rounded-xl font-medium transition-all shadow-lg"> เข้าสู่ระบบนักศึกษา </button> <button onclick="showPage('register')" class="w-full bg-white border-2 border-indigo-300 text-indigo-700 py-4 rounded-xl font-medium hover:bg-indigo-50 transition-all"> ลงทะเบียน </button> <button onclick="showPage('admin-login')" class="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-4 rounded-xl font-medium transition-all shadow-lg"> เข้าสู่ระบบอาจารย์ </button>
@@ -162,7 +162,7 @@
    <div class="min-h-full flex items-center justify-center p-6">
     <div class="max-w-md w-full bg-white rounded-3xl shadow-2xl overflow-hidden animate-in">
      <div class="bg-gradient-to-r from-indigo-600 to-purple-600 p-6"><button onclick="showPage('landing')" class="text-white mb-4 flex items-center gap-2 hover:gap-3 transition-all"> <span>←</span> <span>กลับ</span> </button>
-      <h2 class="text-2xl font-bold text-white">เข้าสู่ระบบนักศึกษา</h2>
+      <h2 class="text-2xl font-bold text-white">เข้าสู่ระบบ</h2>
       <p class="text-indigo-100 text-sm mt-1">ยินดีต้อนรับกลับมา</p>
      </div>
      <form id="login-form" class="p-6 space-y-4">
@@ -182,7 +182,7 @@
    <div class="min-h-full flex items-center justify-center p-6">
     <div class="max-w-md w-full bg-white rounded-3xl shadow-2xl overflow-hidden animate-in">
      <div class="bg-gradient-to-r from-purple-600 to-pink-600 p-6"><button onclick="showPage('landing')" class="text-white mb-4 flex items-center gap-2 hover:gap-3 transition-all"> <span>←</span> <span>กลับ</span> </button>
-      <h2 class="text-2xl font-bold text-white">เข้าสู่ระบบอาจารย์</h2>
+      <h2 class="text-2xl font-bold text-white">เข้าสู่ระบบผู้คุมสอบ</h2>
       <p class="text-purple-100 text-sm mt-1">สำหรับผู้คุมสอบเท่านั้น</p>
      </div>
      <form id="admin-login-form" class="p-6 space-y-4">
@@ -200,15 +200,15 @@
     <header class="bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg">
      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
       <div>
-       <h1 class="text-xl font-bold">Dashboard อาจารย์</h1>
+       <h1 class="text-xl font-bold">Dashboard ผู้คุมสอบ</h1>
        <p id="admin-name" class="text-sm text-purple-100">ผู้คุมสอบ</p>
       </div><button onclick="logout()" class="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg text-sm transition-all"> ออกจากระบบ </button>
      </div>
     </header>
     <main class="max-w-7xl mx-auto px-6 py-8">
      <div class="mb-6">
-      <h2 class="text-2xl font-bold text-gray-900">รายการนักศึกษาที่จองสอบกับคุณ</h2>
-      <p class="text-gray-600">จัดการและบันทึกผลการสอบสำหรับนักศึกษา</p>
+      <h2 class="text-2xl font-bold text-gray-900">รายการที่จองสอบกับคุณ</h2>
+      <p class="text-gray-600">จัดการและบันทึกผลการสอบ</p>
      </div>
      <div id="admin-bookings-list" class="space-y-4"></div>
     </main>
@@ -317,7 +317,7 @@
             👨‍🏫
            </div>
            <div class="font-medium">
-            จองสอบกับอาจารย์
+            จองสอบกับผู้คุมสอบ
            </div>
           </div></label>
         </div>
