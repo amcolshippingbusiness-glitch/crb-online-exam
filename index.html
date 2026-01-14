@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ระบบสอบ CRB ออนไลน์</title>
+  <link rel="icon" href="data:,">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -418,7 +419,7 @@
   </div>
   <script>
     // ⚠️ สำคัญ! แทนที่ URL นี้ด้วย URL จาก Render.com ของคุณ
-    const API_BASE_URL = 'https://script.google.com/macros/s/AKfycbzuvVM3jVWwsywHa-7K1vap4Duatu1zYJAR8bL6TVCmvuoRThqTxicKr-G-ygXhUnxRiQ/exec';
+    const API_BASE_URL = 'https://script.google.com/macros/s/PUT_YOUR_SCRIPT_ID_HERE/exec';
 
     // State
     let appState = {
@@ -512,18 +513,6 @@
   if (!res.ok || json?.error) throw new Error(json?.error || 'API request failed');
   return json;
 }
-
-      
-      try {
-        const response = await fetch(`${API_BASE_URL}/${endpoint}`, options);
-        if (!response.ok) throw new Error('API request failed');
-        return await response.json();
-      } catch (error) {
-        console.error('API Error:', error);
-        throw error;
-      }
-    }
-
     async function loadData() {
       try {
         const [users, bookings] = await Promise.all([
@@ -1439,5 +1428,5 @@
       });
     });
   </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bd456a7e21126da',t:'MTc2ODMwMTQ4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
