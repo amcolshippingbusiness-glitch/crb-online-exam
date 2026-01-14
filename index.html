@@ -1199,8 +1199,9 @@
     }
 
     // Form Handlers
-    document.addEventListener('DOMContentLoaded', () => {
-      initApp();
+    document.addEventListener('DOMContentLoaded', async () => {
+  await initApp();
+
 
       // Register Form
       document.getElementById('register-form').addEventListener('submit', async (e) => {
